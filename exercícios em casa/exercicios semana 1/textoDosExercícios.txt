@@ -1,0 +1,101 @@
+Nível Fácil
+1) Crie um programa que peça para o usuário digitar três notas individualmente (uma por vez), faça a média e caso a média seja igual ou maior que 7,
+ mostre uma mensagem "Aprovado!" e a média. Caso seja menor que 7, mostre uma mensagem "Reprovado!" e a média.
+
+2) Faça um programa para ler o salário anual de um funcionário e o piso salarial mensal da sua categoria.
+ Mostrar o salário mensal do funcionário e dizer se ele recebe de acordo com o piso (salário mensal igual ou maior que o piso da categoria) ou se recebe abaixo do piso.
+
+3) Criar um programa que pergunte o nome e a idade da pessoa, e se tem comorbidade (S ou N).
+ Mostrar mensagem "Pode se vacinar!" caso a idade seja maior ou igual a 60 ou tenha comorbidade.
+ Caso contrário, mostrar mensagem "Não pode se vacinar!".
+
+4) Fazer um programa no qual o usuário digite a sua altura e o seu peso,
+ ao final mostre o IMC (índice de massa corporal) e uma mensagem se está abaixo do peso (IMC menor que 18),
+ na faixa de peso ideal (IMC de 18 a 25) ou acima do peso (IMC maior 25). IMC = peso / (altura * altura).
+
+5) Criar um programa que simule o login de um roteador. O nome de usuário (username) é "admin"
+ e a senha (password) "123". Pedir ao usuário para digitar username e password.
+ Caso os dados estejam corretos, mostrar uma mensagem "Login efetuado!", caso contrário "Login falhou!".
+ (DESAFIO: Mostrar mensagens específicas para erro de username, de password ou de ambos).
+
+6) Elaborar um programa que alerte sobre os riscos de animais em extinção. O usuário deve digitar
+ o nome da espécie e a sua população (total de indivíduos). Populações entre 0 e 500 indivíduos,
+ são classificadas como "Espécie criticamente em perigo", populações entre 501 e 1000 indivíduos,
+ são classificadas como "Espécie em perigo" e populações entre 1001 e 5000 indivíduos,
+ são classificadas como "Espécie vulnerável!"
+
+7) Criar um programa para calcular a densidade demográfica (habitantes por quilômetro quadrado) de uma região.
+ Sendo, densidade igual a população (total de habitantes) dividida pela área (metros quadrados).
+ Mostrar mensagens para densidade alta (maior que 100), média (entre 25 e 100), baixa (menor que 25).
+
+8) Pedir 2 números para o usuário e mostrar qual é o maior e qual é o menor ou se são iguais.
+Exemplo: 70 é maior que 23
+Exemplo: 52 é igual a 52
+
+9) Pedir para o usuário digitar 1 numero, mostrar se é par ou impar e se é positivo ou negativo.
+
+10) Desenvolva um programa no qual o usuário deve digitar o nome e a idade de 3 pessoas.
+ Ao final mostrar a média de idade delas e a maior idade dentre essas pessoas.
+
+11) Criar um programa que informa quantos dias tem determinado mês (desconsiderando ano bissexto) do ano.
+ Deve ser perguntado ao usuário o mês e a resposta deve ser numérica. Exemplo: Usuário digitou 3, que corresponde a março.
+ Mostrar na tela "O mês possui 31 dias".
+
+12) Desenvolva um programa que pergunte ao usuário o número da sua conta bancária e o tipo de operação a ser realizada:
+ 1) Saldo 2) Depósito 3) Saque. Nas opções de depósito e saque,
+ perguntar o valor a ser depositado ou sacado e mostrar o saldo atualizado na tela. Na opção saldo,
+ apenas mostrar o saldo atual na tela. Considere que um saque só pode ser realizado caso haja saldo suficiente.
+ Criar uma variável com um valor que represente o saldo inicial.
+
+13) Em um determinado e-commerce, o frete para produtos possui o valor fixo de R$12,50. A loja possui benefícios para assinantes em três categorias: 1) Assinante Premium, ganha 20% de desconto e frete grátis 2) Assinante Gold, ganha 20% de desconto mas paga frete 3) Assinante Silver, ganha 10% de desconto mas paga frete. 4) Não assinante, sem benefícios. Faça um programa que solicite o valor da compra e a categoria de assinante (1, 2, 3 ou 4). Mostrar na tela o valor da compra de acordo com a opção escolhida.
+
+14) Numa competição de arremesso de peteca, o competidor tem direito a 3 arremessos para que a peteca caia em um alvo com áreas e pontuações de 0 a 5, sendo 5 no centro e 0 fora do alvo. Faça um programa que pergunte a pontuação de cada arremesso e ao final mostre o resultado (soma dos pontos) e a classifição: 15 pontos (deus da peteca), de 14 a 10 (petequeiro profissa), de 9 a 5 (petequeiro de final de semana), de 4 a 1 (pseudo-petequeiro) e 0 pontos (nunca petequeiro).
+Nível Médio
+15 Sistema de Classificação de Alunos: Crie um programa que receba a nota de um aluno (de 0 a 100). Use condições para classificar o aluno de acordo com os seguintes critérios:
+90-100: "A" (Excelente)
+80-89: "B" (Bom)
+70-79: "C" (Regular)
+60-69: "D" (Passou)
+Abaixo de 60: "F" (Reprovado)
+16 Jogo de Par ou Ímpar: Crie um jogo onde o computador escolhe um número aleatório de 1 a 10. O usuário deve adivinhar se o número é par ou ímpar. O programa deve dizer se o usuário acertou e qual era o número.
+17 Cálculo de Desconto: Uma loja está oferecendo descontos. Peça ao usuário o valor total da compra. Aplique as seguintes regras de desconto:
+Se a compra for de R$ 100 a R$ 200, aplique 10% de desconto.
+Se for de R$ 201 a R$ 300, aplique 15% de desconto.
+Acima de R$ 300, aplique 20% de desconto.
+Abaixo de R$ 100, não há desconto. Calcule e exiba o valor final.
+
+
+Nível Avançado
+
+18) Calculadora de IMC com Classificação: Peça ao usuário para inserir o peso (em kg) e a altura (em metros). Calcule o Índice de Massa Corporal (IMC) com a fórmula 
+IMC=peso/(altura2)
+. Com base no resultado, classifique a pessoa de acordo com a tabela da OMS (Organização Mundial da Saúde):
+Abaixo de 18.5: Abaixo do peso
+18.5 - 24.9: Peso normal
+25.0 - 29.9: Sobrepeso
+30.0 - 34.9: Obesidade grau 1
+35.0 - 39.9: Obesidade grau 2
+Acima de 40.0: Obesidade grau 3
+
+19) Sistema de Reservas de Cinema: Crie um programa para um cinema. Peça a idade do usuário. As regras de preço são as seguintes:
+Preço base: R$ 20.
+Crianças (até 12 anos): 50% de desconto.
+Idosos (acima de 60 anos): 30% de desconto.
+Estudantes (apenas se tiverem a carteirinha): 25% de desconto. O programa deve perguntar se o usuário é estudante (se aplicável) e, com base nas respostas, calcular o valor final a ser pago.
+
+20) Análise de Senha: Peça ao usuário para criar uma senha. Verifique a força da senha com base nas seguintes regras:
+Fraca: Menos de 8 caracteres.
+Média: 8 ou mais caracteres, mas não contém uma letra maiúscula, uma minúscula, um número ou um caractere especial.
+Forte: 8 ou mais caracteres, contendo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial (!@#$%^&*()_+=-). Use as funções str.islower(), str.isupper(), str.isdigit() ou a biblioteca re para facilitar.
+
+21) Jogo de Jokenpô (Pedra, Papel, Tesoura): O computador deve escolher aleatoriamente uma das três opções. O usuário deve fazer sua escolha. Use estruturas de condição para determinar o vencedor, o perdedor ou se foi um empate.
+Aprovação de Empréstimo Bancário: Peça ao usuário os seguintes dados:
+Valor do empréstimo.
+Salário mensal.
+Número de anos para pagar. Calcule o valor da parcela mensal. Para aprovar o empréstimo, a parcela não pode exceder 30% do salário mensal. O programa deve informar se o empréstimo foi aprovado ou negado e, se aprovado, qual o valor da parcela.
+
+22) Aprovação de Empréstimo Bancário: Peça ao usuário os seguintes dados:
+Valor do empréstimo.
+Salário mensal.
+Número de anos para pagar. Calcule o valor da parcela mensal. Para aprovar o empréstimo, a parcela não pode exceder 30% do salário mensal. O programa deve informar se o empréstimo foi aprovado ou negado e, se aprovado, qual o valor da parcela.
+
