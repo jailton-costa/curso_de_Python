@@ -1,4 +1,4 @@
-#-------- contexto: Atividade 1 de Python - Dia 3 ---------
+#-------- contexto: Atividade 3 de Python - Dia 3 ---------
 
 #03 Crie uma função chamada calcular_media(lista_de_notas) que receba uma lista de notas (números float) e retorne a média dessas notas.
 # No programa principal:

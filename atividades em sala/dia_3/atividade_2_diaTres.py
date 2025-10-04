@@ -1,4 +1,4 @@
-#-------- contexto: Atividade 1 de Python - Dia 3 ---------
+#-------- contexto: Atividade 2 de Python - Dia 3 ---------
 
 # #02Crie uma função chamada classificar_idade(idade) que receba a idade de uma pessoa e retorne uma string com a classificação:
 # "Criança" (idade < 12)

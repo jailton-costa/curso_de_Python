@@ -107,22 +107,73 @@
 
 
 
-class vendedor():
-    def __init__(self, nome):
-        self.nome = nome
-        self.vendas = []
-    
-    def vendeu(self, vendas):
-        self.vendas = vendas
-        
-    def bateu_meta(self, meta):
-        if self.vendas > meta:
-            print(f"{self.nome} bateu a meta")
-        else:
-            print(f"{self.nome} não bateu a meta")
-vendedor1 = input("nome do vendedor: ")
-vendedor1.vendeu( input("quantidade de vendas: "))
-vendedor1.bateu_meta(input("qual a meta de vendas: "))
+# class vendedor():
+#     def __init__(self, nome):
+#         self.nome = nome
+
+#     def vendeu(self, vendas):
+#         self.totalV = vendas
+
+#     def bateu_meta(self, meta):
+#         if self.totalV > meta:
+#             print(f"{self.nome} bateu a meta")
+#         else:
+#             print(f"{self.nome} não bateu a meta")
+
+# vendedor1 = vendedor(input("nome do vendedor: "))
+# vendedor1.vendeu(float(input("quantidade de vendas: ")))
+# vendedor1.bateu_meta(float(input("qual a meta de vendas: ")))
+
+
+# class Circulo:
+#     pi = 3.14
+#     def __init__(self, raio=5):
+#         self.raio = raio
+#     def area(self):
+#         return self.pi * (self.raio ** 2)
+#     def setRaio(self, novo_raio):
+#         self.raio = novo_raio
+#     def getRaio(self):
+#         return self.raio
+
+# x = int(input("Digite o raio: "))
+# circulo1 = Circulo(x)
+# print("O raio é:", circulo1.getRaio())
+# print("A área é:", circulo1.area())
+# x = int(input("Digite o novo raio: "))
+# circulo1.setRaio(x)
+# print("O novo raio é:", circulo1.getRaio())
+# print("A nova área é:", circulo1.area())
+
+
+# Classe base
+class Automovel:
+    def __init__(self, marca, modelo, ano, cor):
+        self.marca = marca
+        self.modelo = modelo
+        self.ano = ano
+        self.cor = cor
+
+# Subclasse Carro
+class Carro(Automovel):
+    def __init__(self, marca, modelo, ano, cor, num_portas):
+        super().__init__(marca, modelo, ano, cor)
+        self.num_portas = num_portas
+
+# Subclasse Moto
+class Moto(Automovel):
+    def __init__(self, marca, modelo, ano, cor, estilo):
+        super().__init__(marca, modelo, ano, cor)
+        self.estilo = estilo
+
+
+# Criando um carro
+meu_carro = Carro("Toyota", "Corolla", 2020, "Prata", 4)
+print(f"Meu carro é um {meu_carro.marca} {meu_carro.modelo}, ano {meu_carro.ano}, cor {meu_carro.cor}, com {meu_carro.num_portas} portas.")
+
+# Criando uma moto
+minha_moto = Moto("Honda", "CB500", 2019, "Vermelha", "Naked")
+print(f"Minha moto é uma {minha_moto.marca} {minha_moto.modelo}, ano {minha_moto.ano}, cor {minha_moto.cor}, estilo {minha_moto.estilo}.")
 
 
 
@@ -142,19 +193,29 @@ vendedor1.bateu_meta(input("qual a meta de vendas: "))
 # print("Seja bem-vindo, " + nome + sobrenome + "!")
 # print("Você tem ", idade, " anos.") # calculada como string
 
-# if senha == comSenha:
-#     print("Senha confirmada com sucesso.")
-# else:
-#     print("As senhas não coincidem. Tente novamente.")
-# if termos == 'sim' or termos == 's':
-#     print("Você aceitou os termos.")
-# elif termos == 'não' or termos == 'nao':
-#     print("Você não aceitou os termos.")
-#     termos = input("Você aceita os termos? (sim ou não) ")
-# else:
-#     print("Resposta inválida sobre os termos.")
+# while True:
+#     senha = input("Digite a senha: ")
+#     comSenha = input("Confirme a senha: ")
 
+#     if senha == comSenha:
+#         print("Senha confirmada com sucesso.")
+#         break  # sai do loop se estiver correta
+#     else:
+#         while True:
+#             print("As senhas não coincidem. Tente novamente.\n")
+#             senha = input("Digite a senha: ")
+#             comSenha = input("Confirme a senha: ")
 
-# print("Você nasceu em " + str(ano_nascimento) + ".") # convertendo de volta para string
-# print("seus dados:", nomeFull, idade, email, senha, termos, ano_nascimento)
-# print("Fim do cadastro programa.")
+# while True:
+#     termos = input("Você aceita os termos? (sim ou não) ").strip().lower()
+
+#     if termos == 'sim' or termos == 's':
+#         print("Você aceitou os termos.")
+#         break  # sai do loop se aceitou
+#     elif termos == 'não' or termos == 'nao' or termos == 'n':
+#         print("Você não aceitou os termos. Por favor, aceite para continuar.\n")
+#         # continua pedindo até aceitar
+#     else:
+#         print("Resposta inválida sobre os termos. Responda com 'sim' ou 'não'.\n")
+
+# print(f"seus dados:\n {nomeFull}\n, {idade}\n, {email}\n, {senha}\n, {termos}\n, {ano_nascimento} \n Fim do cadastro programa.")
