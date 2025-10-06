@@ -1,0 +1,112 @@
+## ATIVIDADE 001#
+Você trabalha no setor de Business Intelligence (BI) de uma empresa de
+tecnologia. Sua tarefa é monitorar a produtividade dos funcionários durante o mês. Crie um programa em Python que:
+Use um laço while para permitir o cadastro de funcionários (nome e setor) até
+que o usuário decida parar (ex: digitando &quot;sair&quot;).
+Para cada funcionário cadastrado, use um laço for para registrar a quantidade
+de tarefas concluídas por semana durante o mês de Setembro (4 semanas). Calcule e mostre:
+A média de tarefas por funcionário no mês (len() pode ser usado para contar as semanas).
+O total geral de tarefas da equipe no mês. Exiba dois gráficos com matplotlib:
+�� Gráfico 1 (linha): mostra a evolução da produtividade da equipe nas 4
+semanas de Setembro (somando tarefas de todos os funcionários por semana).
+�� Gráfico 2 (barras): mostra a produtividade total por funcionário no mês de Setembro.
+
+
+
+## ATIVIDADE 002#
+Criar um programa que leia as temperaturas diárias de uma semana (7 dias) e
+calcule a média das temperaturas, além de verificar se algum dia foi mais
+quente ou mais frio que a média. O programa também deve mostrar um gráfico com as temperaturas diárias.
+ Estruturas usadas: Laços de repetição (for ou while), estrutura de condição (if/else), vetor/array, gráficos.
+Passos:
+1. O programa deve receber 7 entradas de temperatura para cada dia da semana.
+2. Calcular a média das temperaturas.
+3. Verificar quantos dias foram acima ou abaixo da média.
+4. Plotar um gráfico de barras com as temperaturas diárias
+
+
+
+## ATIVIDADE 003#
+Receber as notas de 10 alunos em uma disciplina, calcular a média geral,
+contar quantos alunos ficaram acima ou abaixo da média e mostrar um gráfico de distribuição das notas.
+ Estruturas usadas: Laços de repetição (for), estrutura de condição (if/else), vetor/array, gráficos.
+Passos:
+1. O programa deve receber 10 notas dos alunos.
+2. Calcular a média geral.
+3. Contar quantos alunos ficaram acima e quantos abaixo da média.
+4. Mostrar um gráfico de distribuição das notas.
+
+
+
+## ATIVIDADE 004#
+Objetivo: Criar um sistema simples de controle de estoque de um
+supermercado. O programa deve perguntar o nome e a quantidade de 5
+produtos no estoque, e depois mostrar se algum produto está abaixo do
+estoque mínimo (definido pelo usuário) e mostrar um gráfico com o estoque atual de cada produto.
+ Estruturas usadas: Laços de repetição (for), estrutura de condição (if/else), vetor/array, gráficos.
+Passos:
+1. Perguntar o nome e a quantidade de 5 produtos.
+2. Perguntar o estoque mínimo.
+3. Verificar se algum produto está abaixo do estoque mínimo e imprimir um
+alerta.
+4. Plotar um gráfico de barras com o estoque de cada produto.
+
+
+
+## ATIVIDADE 005#
+O programa deve receber o valor dos gastos diários durante uma semana e
+calcular o total gasto, a média diária de gastos e quantos dias ficaram acima da
+média. O programa também deve gerar um gráfico de pizza para representar a
+porcentagem de gasto por dia.
+Estruturas usadas: Laços de repetição (for), estrutura de condição(if/else), vetor/array, gráficos.
+Passos:
+1. O programa deve receber os valores dos gastos durante 7 dias.
+2. Calcular o total gasto e a média diária.
+3. Contar quantos dias os gastos foram acima da média.
+4. Gerar um gráfico de pizza com os valores de cada dia.
+
+
+
+## ATIVIDADE 006#
+Criar um sistema que leia o número de vendas diárias de um vendedor durante
+um mês (30 dias), calcule as metas atingidas, verifique quais dias superaram a
+média diária de vendas e gere gráficos para visualização do desempenho.
+O exercício envolve:
+ Leitura e processamento de dados.
+ Cálculo de média, desvio padrão e metas.
+ Análise condicional de desempenho.
+ Geração de gráficos.
+
+Passos:
+1. Entrada de Dados:
+o O sistema deve receber, via input, o número de vendas diárias de
+um vendedor durante 30 dias.
+o O sistema deve também receber a meta de vendas diária (um
+valor fixo que o vendedor deve atingir todo dia).
+
+2. Cálculos:
+o Calcule a média de vendas diárias.
+o Calcule o desvio padrão das vendas (para analisar a variação do
+desempenho).
+
+o Calcule quantos dias o vendedor superou a meta diária de
+vendas.
+
+3. Análise de Resultados:
+o Verifique quantos dias o vendedor teve vendas acima da média e
+quantos dias ficaram abaixo da média.
+o Para cada dia que teve vendas acima da média, adicione um
+marcador especial indicando &quot;Desempenho acima da média&quot;.
+
+4. Visualização:
+o Gere um gráfico de barras mostrando as vendas diárias do
+vendedor.
+o Gere um gráfico de linha representando a média de vendas
+diárias ao longo do mês.
+o Gere um gráfico de dispersão (scatter) mostrando a dispersão
+das vendas diárias em relação à meta de vendas.
+
+5. Saída:
+o Exiba a média de vendas diárias e o desvio padrão.
+o Exiba o número de dias acima e abaixo da média.
+o Exiba o número de dias que o vendedor superou a meta.

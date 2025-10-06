@@ -10,14 +10,48 @@
 # 	-Implemente um método exibir_info() em cada classe para mostrar os detalhes do item.
 # 	-Crie uma lista contendo objetos de cada tipo e imprima as informações usando o método exibir_info().
 
-# ##002#
-# Você vai implementar um sistema para calcular o pagamento mensal de funcionários de uma empresa que podem ter diferentes tipos de contrato:
-# CLT (com salário fixo), Freelancer (com pagamento por hora) e Comissionado (salário fixo + comissão sobre vendas).
-# Todos os funcionários têm nome e CPF. Funcionários CLT possuem salário fixo. Freelancers possuem valor por hora e horas trabalhadas no mês.
-# Comissionados possuem salário fixo e valor total de vendas no mês.
+class ItemBiblioteca:
+    def __init__(self, titulo, ano):
+        self.titulo = titulo
+        self.ano = ano
 
-# Atenção:
-# 	- Crie uma classe base Funcionario com atributos comuns.
-# 	- Crie as classes filhas FuncionarioCLT, Freelancer e Comissionado, com seus atributos específicos.
-# 	- Cada classe deve implementar um método calcular_pagamento() que retorna o valor a ser pago.
-# 	- Crie objetos de cada tipo, chame o método calcular_pagamento() e exiba o resultado.
+    def exibir_info(self):
+        return f'Título: {self.titulo}, Ano: {self.ano}'
+    
+class Livro(ItemBiblioteca):
+    def __init__(self, titulo, ano, autor, num_paginas):
+        super().__init__(titulo, ano)
+        self.autor = autor
+        self.num_paginas = num_paginas
+
+    def exibir_info(self):
+        info_base = super().exibir_info()
+        return f'{info_base}, Autor: {self.autor}, Número de Páginas: {self.num_paginas}'
+    
+class Revista(ItemBiblioteca):
+    def __init__(self, titulo, ano, num_edicao, mes_publicacao):
+        super().__init__(titulo, ano)
+        self.num_edicao = num_edicao
+        self.mes_publicacao = mes_publicacao
+
+    def exibir_info(self):
+        info_base = super().exibir_info()
+        return f'{info_base}, Número da Edição: {self.num_edicao}, Mês de Publicação: {self.mes_publicacao}'
+    
+class DVD(ItemBiblioteca):
+    def __init__(self, titulo, ano, duracao_minutos, formato):
+        super().__init__(titulo, ano)
+        self.duracao_minutos = duracao_minutos
+        self.formato = formato
+
+    def exibir_info(self):
+        info_base = super().exibir_info()
+        return f'{info_base}, Duração: {self.duracao_minutos} minutos, Formato: {self.formato}'
+    
+biblioteca = []
+biblioteca.append(Livro("Dom Casmurro", 1899, "Machado de Assis", 256))
+biblioteca.append(DVD("Avatar", 2009, 162, "Blu-ray\n"))
+biblioteca.append(Revista("Scientific American", 2020, 3, "Março\n"))
+
+for item in biblioteca:
+    print(item.exibir_info())
