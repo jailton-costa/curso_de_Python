@@ -1,7 +1,7 @@
 # Aula 4 de Python 📘
-# antes de executar e recomendado usar o colab, mas pode usar o vscode
+# Antes de executar, é recomendado usar o Google Colab (para melhor visualização e interatividade), mas pode usar o VSCode normalmente.
 # Conteúdo:
-# - [ ] Funções
+# - [x] Funções
 # - [x] Parâmetros e Argumentos
 
 
@@ -380,3 +380,41 @@ df_dsa_1 = pd.read_csv('dados_funcionarios_sem_indice.csv')
 df_dsa_1.head(6)
 
 
+
+# ## intervalo nada para fazer vou me incomodar com esse cadastro de novo kkkkk ###
+# print("Olá! Vamos criar seu cadastro.")
+# nome = input("Qual é o seu nome? ") 
+# sobrenome = input("Qual é o seu sobrenome? ") 
+# idade = int(input("Quantos anos você tem? "))
+# email = input("Qual é o seu email? ")
+# while True:
+#     senha = input("Digite a senha: ")
+#     comSenha = input("Confirme a senha: ")
+
+#     if senha == comSenha:
+#         print("Senha confirmada com sucesso.")
+#         break  # sai do loop se estiver correta
+#     else:
+#         print("As senhas não coincidem. Tente novamente.\n")
+
+# while True:
+#     termos = input("Você aceita os termos? (sim ou não) ").strip().lower()
+
+#     if termos == 'sim' or termos == 's':
+#         print("Você aceitou os termos.")
+#         break  # sai do loop se aceitou
+#     elif termos == 'não' or termos == 'nao' or termos == 'n':
+#         print("Você não aceitou os termos. Por favor, aceite para continuar.\n")
+#         # continua pedindo até aceitar
+#     else:
+#         print("Resposta inválida sobre os termos. Responda com 'sim' ou 'não'.\n")
+
+
+# nomeFull = nome + " " + sobrenome
+# ano_nascimento = 2025 - int(idade) # convertendo idade para inteiro
+
+# print("Seja bem-vindo, " + nomeFull + "!")
+# print("Você tem ", idade, " anos.") # calculada como string
+
+# print(f"seus dados:\n nome: {nomeFull}\n, idade: {idade}\n, email: {email}\n, senha: {senha}\n, termos: {termos}\n, data de naciento: {ano_nascimento} \n Fim do cadastro programa.")
+#cadastro finalizado com sucesso! :)
