@@ -144,166 +144,29 @@
 
 
 
-# fazendo um gráfico simples
-# import matplotlib.pyplot as plt  # ' pip install matplotlib ' para funcionar
-# x = [1, 2, 3, 4, 5]
-# y = [2, 3, 5, 7, 11]
+# fazendo um gráfico simples é explicando matplotlib
+import matplotlib.pyplot as plt  # ' pip install matplotlib ' para funcionar
+x = [1, 2, 3, 4, 5]
+y = [2, 3, 5, 7, 11]
 
-# plt.bar(x, y)
-# plt.show()
+plt.bar(x, y)   # Cria um gráfico de barras com os valores de x e y
+plt.show()      # Exibe o gráfico na tela
 
-# import random
-# import numpy as np
-# from matplotlib import pyplot as plt
+import random # gerar números aleatórios.
+import numpy as np # manipulação de arrays (vetores e matrizes).
+from matplotlib import pyplot as plt # criar gráficos.
 
-# x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-# y = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+y = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 
-# plt.ion()         # Ativa modo interativo
-# plt.plot(x, y)    
-# plt.pause(1)
-# plt.cla()         # Limpa o gráfico
-# plt.pause(4)
+plt.ion()        # Ativa o modo interativo do matplotlib (permite atualizar o gráfico sem travar o programa)
+plt.plot(x, y)   # Plota uma linha conectando os pontos de x e y
+plt.pause(1)     # Pausa 1 segundo para o gráfico aparecer
+plt.cla()        # Limpa o gráfico atual, deixando a figura pronta para desenhar outro gráfico
+plt.pause(4)     # Pausa 4 segundos antes de desenhar o próximo gráfico
 
-# y = np.random.randint(10, 20, 10)  # Agora com 10 valores
-# plt.bar(x, y)
-# plt.pause(4)
-# plt.ioff()        # Desativa modo interativo
-
-
-
-
-# Você é programador da loja de departamento Americanas.
-# Faça um programa que peça para incluir nome de vendedores até quantidade que o usuário não quiser mais.
-# Após isso, o programa deve habilitar solicitação da venda do mês de Março dos vendedores.
-# Com Isso, você deve tirar a média do mês de Março, sendo que deve ter um gráfico mostrando resultado do mês Janeiro(Vendeu 50mil) e Fevereiro(vendeu 30mil), obviamente informando também Março no gráfico.
-# Por fim mostrar em outro gráfico vendas por vendedor.
-# import matplotlib.pyplot as plt
-# listaVendedores = []
-# listaVendas = []
-# totalVendas = 0
-# continuar = 's'
-
-# while continuar.lower() == 's':
-#     nome = input("Digite o nome do vendedor: ").strip()
-#     venda = float(input(f"Digite o valor das vendas de {nome} em março: "))
-#     listaVendedores.append(nome)
-#     listaVendas.append(venda)
-#     totalVendas += venda
-#     continuar = input("Deseja adicionar outro vendedor? (s/n): ")
-#     mediaVendas = totalVendas / len(listaVendedores) if listaVendedores else 0
-# print(f"Média de vendas em março: R$ {mediaVendas:.2f}")
-
-# meses = ['Janeiro', 'Fevereiro', 'Março']
-# vendasMeses = [500000, 30000, totalVendas]
-
-# plt.figure(figsize=(10, 5))
-# plt.subplot(1, 2, 1)
-# plt.bar(meses, vendasMeses, color=['blue', 'orange', 'green'])
-# plt.title('Vendas por Mês')
-# plt.ylabel('Vendas (R$)')
-# plt.subplot(1, 2, 2)
-# plt.bar(listaVendedores, listaVendas, color='purple')
-# plt.title('Vendas por Vendedor em Março')
-# plt.ylabel('Vendas (R$)')
-# plt.xticks(rotation=45)
-# plt.tight_layout()
-# plt.show()
-
-
-
-
-# Você trabalha no setor de logística de uma empresa de varejo. Sua função é acompanhar as entradas de produtos no estoque durante o mês.
-# Use um laço while para permitir o cadastro de produtos (nome do produto) até que o usuário digite "sair".
-# Para cada produto, use um laço for para pedir a quantidade recebida por semana (4 semanas no total).
-# Calcule e mostre:
-# A média semanal de entrada de cada produto.
-# O total geral de produtos recebidos no mês.
-# Exiba dois gráficos com matplotlib:
-# 📈 Gráfico de linha mostrando o total de produtos recebidos por semana (somando todos os produtos).
-# 📊 Gráfico de barras mostrando o total mensal recebido por produto.
-import matplotlib.pyplot as plt
-listaProdutos = []
-listaTotaisMensais = []
-totalGeralMensal = 0
-continuar = 's'
-
-while continuar.lower() == 's' or continuar.lower() == 'sim':
-    nomeProduto = input("Digite o nome do produto (ou 'sair' para encerrar): ").strip()
-    if nomeProduto.lower() == 'sair':
-        break
-    totalMensal = 0
-    for semana in range(1, 5):
-        quantidade = int(input(f"Digite a quantidade recebida na semana {semana} para {nomeProduto}: "))
-        totalMensal += quantidade
-        mediaSemanal = totalMensal / 4
-    print(f"Média semanal de entrada para {nomeProduto}: {mediaSemanal:.2f}")
-    listaProdutos.append(nomeProduto)
-    listaTotaisMensais.append(totalMensal)
-    totalGeralMensal += totalMensal
-    continuar = input("Deseja adicionar outro produto? (s/n): ")
-print(f"Total geral de produtos recebidos no mês: {totalGeralMensal}")
-# Gráfico de linha para total semanal (somando todos os produtos)
-semanas = [1, 2, 3, 4]
-totaisSemanais = [0, 0, 0, 0]
-for i in range(len(listaProdutos)):
-    for semana in range(4):
-        totaisSemanais[semana] += listaTotaisMensais[i] / 4  # Distribuindo igualmente para simplificação
-plt.figure(figsize=(12, 6))
-plt.subplot(1, 2, 1)
-plt.plot(semanas, totaisSemanais, marker='o')
-plt.title('Total de Produtos Recebidos por Semana')
-plt.xlabel('Semana')
-plt.ylabel('Total de Produtos')
-plt.xticks(semanas)
-# Gráfico de barras para total mensal por produto
-plt.subplot(1, 2, 2)
-plt.bar(listaProdutos, listaTotaisMensais, color='skyblue')
-plt.title('Total Mensal Recebido por Produto')
-plt.xlabel('Produto')
-plt.ylabel('Total Mensal')
-plt.xticks(rotation=45)
-plt.tight_layout()
-plt.show()   #------- codigo com erro cuidado !!! -------
-
-# coresação do código de acima, codigo do professor, código corrigido
-# import matplotlib.pyplot as plt
-# nomes_produtos = []
-# totais_produtos = []
-# total_por_semana = [0, 0, 0, 0]
-# total_geral = 0
-
-# while True:
-#     nome = input("Digite o nome do produto (ou 'sair' para encerrar): ")
-#     if nome.lower() == "sair":
-#         break
-
-#     soma = 0
-#     for i in range(4):
-#         qtd = int(input(f"Quantidade da semana {i+1} para '{nome}': "))
-#         soma += qtd
-#         total_por_semana[i] += qtd
-#         total_geral += qtd
-
-#     media = soma / 4
-#     print(f"Média semanal de '{nome}': {media:.2f} unidades\n")
-
-#     nomes_produtos.append(nome)
-#     totais_produtos.append(soma)  
-
-# print(f"\nTotal geral de produtos recebidos no mês: {total_geral} unidades\n")
-
-# # Gráfico 1: Linha - Total por semana
-# plt.plot(["Semana 1", "Semana 2", "Semana 3", "Semana 4"], total_por_semana, marker='o')
-# plt.title("?? Total por Semana")
-# plt.xlabel("Semana")
-# plt.ylabel("Quantidade")
-# plt.grid(True)
-# plt.show()
-
-# # Gráfico 2: Barras - Total por produto
-# plt.bar(nomes_produtos, totais_produtos, color='green')
-# plt.title("?? Total por Produto no Mês")
-# plt.xlabel("Produto")
-# plt.ylabel("Quantidade")
-# plt.show()
+y = np.random.randint(10, 20, 10)  # Gera 10 valores aleatórios entre 10 e 20
+plt.bar(x, y)    # Cria um gráfico de barras com os novos valores aleatórios
+plt.pause(4)     # Pausa 4 segundos para visualizar o gráfico
+plt.ioff()       # Desativa o modo interativo, gráficos futuros precisarão de plt.show() para aparecer
+plt.show()       # Exibe o gráfico final na tela

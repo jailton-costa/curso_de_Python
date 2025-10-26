@@ -146,7 +146,6 @@
 # print("A nova área é:", circulo1.area())
 
 
-# Classe base
 class Automovel:
     def __init__(self, marca, modelo, ano, cor):
         self.marca = marca
@@ -154,68 +153,19 @@ class Automovel:
         self.ano = ano
         self.cor = cor
 
-# Subclasse Carro
 class Carro(Automovel):
     def __init__(self, marca, modelo, ano, cor, num_portas):
         super().__init__(marca, modelo, ano, cor)
         self.num_portas = num_portas
 
-# Subclasse Moto
 class Moto(Automovel):
     def __init__(self, marca, modelo, ano, cor, estilo):
         super().__init__(marca, modelo, ano, cor)
         self.estilo = estilo
 
 
-# Criando um carro
 meu_carro = Carro("Toyota", "Corolla", 2020, "Prata", 4)
 print(f"Meu carro é um {meu_carro.marca} {meu_carro.modelo}, ano {meu_carro.ano}, cor {meu_carro.cor}, com {meu_carro.num_portas} portas.")
 
-# Criando uma moto
 minha_moto = Moto("Honda", "CB500", 2019, "Vermelha", "Naked")
 print(f"Minha moto é uma {minha_moto.marca} {minha_moto.modelo}, ano {minha_moto.ano}, cor {minha_moto.cor}, estilo {minha_moto.estilo}.")
-
-
-
-### intervalo nada para fazer vou me incomodar com esse cadastro de novo kkkkk ###
-# print("Olá! Vamos criar seu cadastro.")
-# nome = input("Qual é o seu nome? ") 
-# sobrenome = input("Qual é o seu sobrenome? ") 
-# idade = int(input("Quantos anos você tem? "))
-# email = input("Qual é o seu email? ")
-# senha = input("Crie uma senha: ")
-# comSenha = input("Confirme sua senha: ")
-# termos = input("Você aceita os termos? (sim ou não) ")
-
-# nomeFull = nome + " " + sobrenome
-# ano_nascimento = 2025 - int(idade) # convertendo idade para inteiro
-
-# print("Seja bem-vindo, " + nome + sobrenome + "!")
-# print("Você tem ", idade, " anos.") # calculada como string
-
-# while True:
-#     senha = input("Digite a senha: ")
-#     comSenha = input("Confirme a senha: ")
-
-#     if senha == comSenha:
-#         print("Senha confirmada com sucesso.")
-#         break  # sai do loop se estiver correta
-#     else:
-#         while True:
-#             print("As senhas não coincidem. Tente novamente.\n")
-#             senha = input("Digite a senha: ")
-#             comSenha = input("Confirme a senha: ")
-
-# while True:
-#     termos = input("Você aceita os termos? (sim ou não) ").strip().lower()
-
-#     if termos == 'sim' or termos == 's':
-#         print("Você aceitou os termos.")
-#         break  # sai do loop se aceitou
-#     elif termos == 'não' or termos == 'nao' or termos == 'n':
-#         print("Você não aceitou os termos. Por favor, aceite para continuar.\n")
-#         # continua pedindo até aceitar
-#     else:
-#         print("Resposta inválida sobre os termos. Responda com 'sim' ou 'não'.\n")
-
-# print(f"seus dados:\n {nomeFull}\n, {idade}\n, {email}\n, {senha}\n, {termos}\n, {ano_nascimento} \n Fim do cadastro programa.")

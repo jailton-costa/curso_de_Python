@@ -127,6 +127,7 @@ print(ecomerce_data[:5])
 
 
 
+valor_col = ecomerce_data[:, 3]
 
 # Calculando as Estatísticas
 media_valor = np.mean(valor_col)
@@ -134,7 +135,6 @@ mediana_valor = np.median(valor_col)
 std_valor = np.std(valor_col)
 
 
-# --- GRÁFICO ---
 plt.figure(figsize = (12, 5))
 plt.hist(valor_col, bins = 30, color = 'skyblue', edgecolor = 'black', alpha = 0.7)
 plt.axvline(media_valor, color = 'red', linestyle = '--', linewidth = 2, label = f'Média = R$ {media_valor:.2f}')
@@ -148,20 +148,17 @@ plt.legend()
 plt.grid(alpha = 0.3)
 plt.show()
 
-# Separando colunas
 visitas_col = dados_ecommerce[:, 0]
 tempo_col   = dados_ecommerce[:, 1]
 itens_col   = dados_ecommerce[:, 2]
 valor_col   = dados_ecommerce[:, 3]
 
 
-# Calculando as Estatísticas
 media_valor = np.mean(valor_col)
 mediana_valor = np.median(valor_col)
 std_valor = np.std(valor_col)
 
 
-# --- GRÁFICO ---
 plt.figure(figsize = (12, 5))
 plt.hist(valor_col, bins = 30, color = 'skyblue', edgecolor = 'black', alpha = 0.7)
 plt.axvline(media_valor, color = 'red', linestyle = '--', linewidth = 2, label = f'Média = R$ {media_valor:.2f}')
@@ -333,7 +330,7 @@ plt.show()
 x_treino, x_teste, y_treino, y_teste = train_test_split(x, y, test_size=0.2, random_state=42)
 print(f'{x_treino.shape}1treiX {x_teste.shape}2testX \n\n {y_treino.shape}1treiY {y_teste.shape}2testY')
 
-modelo = LinearRegression()
+modelo = LinearRegression() 
 modelo
 ## ou modelo.fit(x_treino, y_treino)
 
@@ -378,43 +375,3 @@ df_dsa.to_csv('dados_funcionarios_sem_indice.csv', index=False, encoding='utf-8'
 df_dsa.to_csv('dados_funcionarios_com_indice.csv', encoding='utf-8')
 df_dsa_1 = pd.read_csv('dados_funcionarios_sem_indice.csv')
 df_dsa_1.head(6)
-
-
-
-# ## intervalo nada para fazer vou me incomodar com esse cadastro de novo kkkkk ###
-# print("Olá! Vamos criar seu cadastro.")
-# nome = input("Qual é o seu nome? ") 
-# sobrenome = input("Qual é o seu sobrenome? ") 
-# idade = int(input("Quantos anos você tem? "))
-# email = input("Qual é o seu email? ")
-# while True:
-#     senha = input("Digite a senha: ")
-#     comSenha = input("Confirme a senha: ")
-
-#     if senha == comSenha:
-#         print("Senha confirmada com sucesso.")
-#         break  # sai do loop se estiver correta
-#     else:
-#         print("As senhas não coincidem. Tente novamente.\n")
-
-# while True:
-#     termos = input("Você aceita os termos? (sim ou não) ").strip().lower()
-
-#     if termos == 'sim' or termos == 's':
-#         print("Você aceitou os termos.")
-#         break  # sai do loop se aceitou
-#     elif termos == 'não' or termos == 'nao' or termos == 'n':
-#         print("Você não aceitou os termos. Por favor, aceite para continuar.\n")
-#         # continua pedindo até aceitar
-#     else:
-#         print("Resposta inválida sobre os termos. Responda com 'sim' ou 'não'.\n")
-
-
-# nomeFull = nome + " " + sobrenome
-# ano_nascimento = 2025 - int(idade) # convertendo idade para inteiro
-
-# print("Seja bem-vindo, " + nomeFull + "!")
-# print("Você tem ", idade, " anos.") # calculada como string
-
-# print(f"seus dados:\n nome: {nomeFull}\n, idade: {idade}\n, email: {email}\n, senha: {senha}\n, termos: {termos}\n, data de naciento: {ano_nascimento} \n Fim do cadastro programa.")
-#cadastro finalizado com sucesso! :)
