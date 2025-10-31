@@ -1,0 +1,89 @@
+1. Variáveis e entrada de dados
+Enunciado:
+Crie um programa que peça ao usuário seu nome e idade e exiba a seguinte mensagem:
+“Olá, [nome]! Você tem [idade] anos.”
+
+
+
+2. Operações matemáticas simples
+Enunciado:
+Peça dois números inteiros ao usuário e mostre:
+A soma,
+A diferença,
+O produto,
+O quociente.
+
+
+
+3. Estrutura condicional simples
+Enunciado:
+Peça a idade do usuário e diga se ele é menor de idade, adulto (18 a 59) ou idoso (60+).
+Habilidade: Uso de if, elif, else.
+
+
+
+4. Estrutura de repetição for
+Enunciado:
+Escreva um programa que mostre a tabuada de um número informado pelo usuário (de 1 a 10).
+Habilidade: Laço for e multiplicação iterativa.
+
+
+
+5. Estrutura de repetição while
+Enunciado:
+Peça números ao usuário até que ele digite 0, e então mostre a soma total desses números.
+Habilidade: Laço while e controle de loop.
+
+
+
+6. Lista e média de valores
+Enunciado:
+Leia 5 notas de alunos, guardando em uma lista e mostre:
+As notas digitadas,
+A média da turma,
+Quantos alunos ficaram acima da média.
+Habilidade: Listas, for, if e cálculo de média.
+
+
+
+7 . Crie um programa que com Classe Aluno com atributos de nome, idade e valor mensalidade,
+sendo que deve ter como método calculo de média, onde ao chamar o método deve passar 3 notas e o
+return deve ser como informação de passou quando acima de 7 ou reprovado abaixo de 7.
+Crie 3 objetos da classe aluno para teste, chamando o método de média
+
+
+
+8. Leitura de dados e estatísticas com pandas
+Enunciado:
+Crie um DataFrame com os seguintes dados:
+Aluno Nota Idade
+Ana 8.5 20
+Bruno 6.0 22
+Carla 7.2 19
+Diego 9.0 23
+Mostre:
+A média das notas,
+O aluno com a maior nota,
+A idade média dos alunos.
+Habilidade: pandas.DataFrame, estatísticas simples.
+
+
+
+9. Geração de gráfico simples
+Enunciado:
+Usando o matplotlib, crie um gráfico de barras mostrando as notas dos alunos do exercício anterior.
+Habilidade: matplotlib.pyplot.bar, título e rótulos de eixos.
+
+
+
+10. Análise de dados e gráfico combinado
+Enunciado:
+Usando pandas e matplotlib, crie um programa que leia (ou crie) um conjunto de dados de vendas
+com as colunas:
+Produto | Quantidade | Receita
+Depois:
+Calcule a receita total,
+
+Mostre o produto mais vendido,
+Gere um gráfico de linhas mostrando a evolução das receitas.
+Habilidade: pandas, agrupamentos, e visualização com matplotlib.
